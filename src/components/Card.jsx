@@ -64,7 +64,6 @@ export const Card = () => {
               src="/Iced_Matcha_Latte.png"
               alt="Matcha image"
             />
-            sss
             <div className="absolute top-4 right-4 bg-neutral-100 rounded-full p-1.5 cursor-pointer active:scale-95 transition-transform duration-200">
               <div className="text-lime-700">
                 <IconPlusFilled size={18} />
