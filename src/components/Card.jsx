@@ -51,36 +51,20 @@ const PathLabel = () => (
 );
 const ImageArea = ({ img, note }) => {
   return (
-    <>
-      <div className="relative w-full h-80 bg-lime-700/70 rounded-3xl pb-1 rounded-b-4xl overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-[94%] overflow-hidden rounded-3xl rounded-b-4xl">
-          <img
-            className="w-full h-full scale-200 object-cover"
-            src={img}
-            alt="Matcha image"
-          />
-        </div>
-        {note && (
-          <p className="absolute bottom-0.5 left-0 right-0 text-center text-[10px] text-lime-100 font-light">
-            {note}
-          </p>
-        )}
+    <div className="relative w-full h-80 bg-lime-700/70 rounded-3xl pb-1 rounded-b-4xl overflow-hidden">
+      <div className="absolute top-0 left-0 w-full h-[94%] overflow-hidden rounded-3xl rounded-b-4xl">
+        <img
+          className="w-full h-full scale-200 object-cover"
+          src={img}
+          alt="Matcha image"
+        />
       </div>
-      {/* <div className="flex justify-between font-bold w-full">
-        <p className="text-base text-neutral-800">{title}</p>
-        <p className="text-base text-neutral-800">{price}</p>
-      </div>
-      <div className="flex text-[9px] items-center justify-between font-medium">
-        {tags.map((tag) => (
-          <p
-            key={tag}
-            className="bg-lime-600/20 text-lime-700 py-0.5 px-1.5 rounded-sm"
-          >
-            {tag}
-          </p>
-        ))}
-      </div> */}
-    </>
+      {note && (
+        <p className="absolute bottom-0.5 left-0 right-0 text-center text-[10px] text-lime-100 font-light">
+          {note}
+        </p>
+      )}
+    </div>
   );
 };
 const AddButton = ({ onClick }) => (
