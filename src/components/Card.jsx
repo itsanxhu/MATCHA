@@ -91,9 +91,9 @@ const Info = ({ children }) => (
 const Tags = ({ tags }) => {
   return (
     <div className="flex text-[9px] items-center justify-between font-medium">
-      {tags.map((tag) => (
+      {tags.map((tag, idx) => (
         <p
-          key={tag}
+          key={idx}
           className="bg-lime-600/20 text-lime-700 py-0.5 px-1.5 rounded-sm"
         >
           {tag}
